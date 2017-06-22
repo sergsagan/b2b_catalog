@@ -6,8 +6,168 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
-@media only screen and (min-width: 1200px) and (max-width: 1439px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .left__sidebar {
+    width: 22%;
+    padding: 15px 7.5px;
+  }
+  .left__sidebar .nav--ubax .nav__item-title {
+    max-width: 246px;
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  .left__sidebar .nav__link:hover .nav__item-title, .left__sidebar .nav--ubax .nav__item-title.current {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .left__sidebar .nav__link:hover .nav__item-descr {
+    font-size: 11px;
+  }
+  .left__sidebar .nav__link:hover .nav__item-descr, .left__sidebar .nav--ubax .nav__item-descr.current {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .header {
+    width: 72%;
+    margin-left: 0;
+    padding: 10px 0 10px 35px;
+  }
+  .header__title {
+    font-size: 28px;
+  }
+  .information {
+    width: 6%;
+    margin-left: 0;
+    height: 75px;
 
-@media only screen and (min-width: 1440px) and (max-width: 1679px) {}
+    .circlephone {
+      width: 75px;
+      height: 75px;
+      bottom: -2px;
+      right: 0;
+    }
+    .circle-fill {
+      width: 70px;
+      height: 70px;
+      top: 4px;
+      right: 4px;
+    }
+    .img-circle {
+      width: 55px;
+      height: 55px;
+    }
+    .img-circleblock {
+      top: 7px;
+      left: 15px;
+    }
+  }
 
-@media only screen and (min-width: 1680px) and (max-width: 1920px) {}
+}
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+  .left__sidebar {
+    width: 20%;
+  }
+  .left__sidebar .nav--ubax .nav__item-title {
+    max-width: 240px;
+  }
+  .header {
+    width: 74%;
+    margin-left: 0;
+    padding: 10px 0 10px 50px;
+  }
+  .header__exit .icon-exit:before {
+    top: 8px;
+  }
+
+  .header__exit {
+    padding-top: 9px;
+  }
+  .information {
+    width: 6%;
+    margin-left: 0;
+
+    .circlephone {
+      bottom: -4px;
+      right: -4px;
+    }
+    .img-circleblock {
+      top: 10px;
+      left: 17px;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1719px) {
+  .left__sidebar {
+    width: 18.3%;
+    margin-left: 0;
+  }
+  .left__sidebar .nav--ubax .nav__item-title {
+    max-width: 250px;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .left__sidebar .nav__link:hover .nav__item-title, .left__sidebar .nav--ubax .nav__item-title.current {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .left__sidebar .nav__link:hover .nav__item-descr {
+    font-size: 12px;
+  }
+  .left__sidebar .nav__link:hover .nav__item-descr, .left__sidebar .nav--ubax .nav__item-descr.current {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .header {
+    width: 76.2%;
+    margin-left: 0;
+    padding: 10px 0 10px 60px;
+  }
+  .header__title {
+    font-size: 31px;
+  }
+  .header__exit .icon-exit:before {
+    top: 8px;
+  }
+  .header__exit {
+    padding-top: 9px;
+  }
+  .icon {
+    font-size: 31px;
+  }
+  .information {
+    width: 5.5%;
+    margin-left: 0;
+
+    .icon-info{
+      font-size: 32px;
+    }
+    .circlephone {
+      bottom: -4px;
+      right: -2px;
+    }
+  }
+}
+@media only screen and (min-width: 1720px) and (max-width: 1920px) {
+  .left__sidebar {
+    width: 17.2%;
+  }
+  .header {
+    width: 77.3%;
+    margin-left: 0;
+  }
+  .icon {
+    font-size: 33px;
+  }
+  .header__exit .icon-exit:before {
+    top: 8px;
+  }
+  .header__exit {
+    padding-top: 9px;
+  }
+  .information {
+    width: 5.5%;
+    margin-left: 0;
+  }
+}

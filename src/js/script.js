@@ -55,8 +55,60 @@ $(function() {
 			}
 		);
 	});
-	
-	//change
+
+   /*function init() {
+        [].slice.call(document.querySelectorAll('.nav')).forEach(function(nav) {
+            var navItems = [].slice.call(nav.querySelectorAll('.nav__item')),
+                itemsTotal = navItems.length,
+                setCurrent = function(item) {
+                    // return if already current
+                    if( item.classList.contains('nav__item--current') ) {
+                        return false;
+                    }
+
+                    // remove current
+                    var currentItem = nav.querySelector('.nav__item--current');
+                    currentItem.classList.remove('nav__item--current');
+
+                    // set current
+                    item.classList.add('nav__item--current');
+
+                };
+
+            navItems.forEach(function(item) {
+                item.addEventListener('click', function() { setCurrent(item); });
+            });
+        });
+
+        [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+            link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+            new Clipboard(link);
+            link.addEventListener('click', function() {
+                link.classList.add('link-copy--animate');
+                setTimeout(function() {
+                    link.classList.remove('link-copy--animate');
+                }, 300);
+            });
+        });
+    }
+
+    init();*/
+
+    $('.nav__link .nav__item').click(function () {
+    	$('.nav__item').removeClass('nav__item--current');
+    	$(this).addClass('nav__item--current');
+        $('.nav__link').find(".nav__item-title, .nav__item-descr").removeClass('current');
+        $(this).parents('.nav__link').find('.nav__item-title').toggleClass('current');
+        $(this).parents('.nav__link').find('.nav__item-descr').toggleClass('current');
+        return true;
+    });
+
+
+
+
+
+
+    //change
 	$('.form-of-training .order-form').click(function() {
 		$('.form-of-training').find(".name, .price, .price .rub").removeClass("active");
 		$(this).parents('.form-of-training').find(".name").toggleClass("active").fadeIn(400);
@@ -84,70 +136,8 @@ $(function() {
         cssEase: 'linear'
     });
 
-    $('.responsive').slick({
-        dots: true,
-        arrows: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: false,
-                    arrows: false,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
     
 
-    $("#phone").mask("+38 (999) 999-99-99");
-	
-	var today = new Date(),
-		ts = new Date( today.getFullYear(), today.getMonth(), today.getDate() + 7),
-		newYear = true;
-	
-	$('#countdown').countdown({
-		timestamp	: ts,
-		callback	: function(days, hours, minutes, seconds){
-			
-			var message = "";
-			
-			message += days + " <i>дней</i> " + ( days==1 ? '':'' ) + "";
-			message += hours + "" + ( hours==1 ? '':':' ) + "";
-			message += minutes + "" + ( minutes==1 ? '':':' ) + "";
-			message += seconds + " " + ( seconds==1 ? '':' ' ) + " ";
-			
-			if(newYear){
-				message += "";
-			}
-			else {
-				message += "";
-			}
-		}
-	});
 
     
     //Аякс отправка форм

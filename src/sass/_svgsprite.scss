@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../img/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 19.125em 25.15625em;
+    background-size: 0.8125em 6.9375em;
 }
 
 .no-svg .icon:before {
@@ -17,19 +17,118 @@
 
 
 
-  .icon.icon-icon-crown:before {
+  .icon.icon-arrow-left:before {
       background-position: 0em 0em;
-      width: 0.625em;
+      width: 0.3125em;
+      height: 0.5em;
+  }
+
+
+
+
+  .icon.icon-arrow-right:before {
+      background-position: 0em -0.5em;
+      width: 0.28125em;
+      height: 0.5em;
+  }
+
+
+
+
+  .icon.icon-check:before {
+      background-position: 0em -1em;
+      width: 0.4375em;
       height: 0.40625em;
   }
 
 
 
 
-  .icon.icon-logo:before {
-      background-position: 0em -0.40625em;
-      width: 19.125em;
-      height: 24.75em;
+  .icon.icon-exit:before {
+      background-position: 0em -1.40625em;
+      width: 0.625em;
+      height: 0.5625em;
+  }
+
+
+
+
+  .icon.icon-info:before {
+      background-position: 0em -1.96875em;
+      width: 0.8125em;
+      height: 0.8125em;
+  }
+
+
+
+
+  .icon.icon-loop:before {
+      background-position: 0em -2.78125em;
+      width: 0.46875em;
+      height: 0.46875em;
+  }
+
+
+
+
+  .icon.icon-mini-arr-down:before {
+      background-position: 0em -3.25em;
+      width: 0.34375em;
+      height: 0.34375em;
+  }
+
+
+
+
+  .icon.icon-mini-arr-right:before {
+      background-position: 0em -3.59375em;
+      width: 0.34375em;
+      height: 0.34375em;
+  }
+
+
+
+
+  .icon.icon-mini-arr-up:before {
+      background-position: 0em -3.9375em;
+      width: 0.34375em;
+      height: 0.375em;
+  }
+
+
+
+
+  .icon.icon-shopping-cart:before {
+      background-position: 0em -4.3125em;
+      width: 0.6875em;
+      height: 0.65625em;
+  }
+
+
+
+
+  .icon.icon-star:before {
+      background-position: 0em -4.96875em;
+      width: 0.6875em;
+      height: 0.65625em;
+  }
+
+
+
+
+  .icon.icon-star-05:before {
+      background-position: 0em -5.625em;
+      width: 0.6875em;
+      height: 0.65625em;
+  }
+
+
+
+
+  .icon.icon-star-not:before {
+      background-position: 0em -6.28125em;
+      width: 0.6875em;
+      height: 0.65625em;
   }
 
 
