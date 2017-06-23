@@ -26,7 +26,45 @@
 <body>
 <div class="wrapper">
     //= template/left_sidebar.html
-    //= template/header.html
+    <div class="main__content">
+        //= template/header.html
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a class="item__link" href="#">Главная</a></li>
+                    <span>/</span>
+                    <li><a class="item__link-current" href="#">Магазин</a></li>
+                </ul>
+            </div>
+        </section><!--end-breadcrumbs-->
+
+        <section class="choice">
+            <div class="container">
+                <label class="offer">
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Специальное предложение</span>
+                </label>
+                <div class="options">
+                    <div class="sort">
+                        <span>Сортировать</span>
+                        <select name="sort" id="sort">
+                            <option value="1">по Рейтингу</option>
+                            <option value="2">по Цене</option>
+                            <option value="3">по Популярности</option>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="Поиск">
+                        <input type="submit" value="">
+                    </div>
+                </div>
+            </div>
+        </section><!--end-choice-->
+
+    </div>
+
     <div class="empty"></div>
 </div>
 //= template/footer.html

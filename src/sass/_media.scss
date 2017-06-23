@@ -8,11 +8,11 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   .left__sidebar {
-    width: 22%;
+    width: 21.5%;
     padding: 15px 7.5px;
   }
   .left__sidebar .nav--ubax .nav__item-title {
-    max-width: 246px;
+    max-width: 239px;
     font-size: 14px;
     margin-right: 3px;
   }
@@ -30,67 +30,80 @@
   .left__sidebar .special__offers .icon-mini-arr-right {
     top: -3px;
   }
-  .header {
-    width: 72%;
-    margin-left: 0;
+  .main__content {
+    width: 78.5%;
+  }
+  .main__content .header {
     padding: 10px 0 10px 35px;
   }
-  .header__title {
+  .main__content .header__title {
     font-size: 28px;
   }
-  .information {
-    width: 6%;
-    margin-left: 0;
+  .main__content .information {
+    width: 75px;
     height: 75px;
 
     .circlephone {
-      width: 75px;
-      height: 75px;
-      bottom: -2px;
+      width: 70px;
+      height: 70px;
+      bottom: 0;
       right: 0;
     }
     .circle-fill {
-      width: 70px;
-      height: 70px;
+      width: 65px;
+      height: 65px;
       top: 4px;
       right: 4px;
     }
     .img-circle {
-      width: 55px;
-      height: 55px;
+      width: 50px;
+      height: 50px;
     }
     .img-circleblock {
-      top: 7px;
-      left: 15px;
+      top: 4px;
+      left: 13px;
     }
+  }
+  .main__content .container {
+    max-width: 950px;
+  }
+  .main__content .choice .offer {
+    display: inline-block;
+    width: 30%;
+  }
+  .main__content .choice .options {
+    display: inline-block;
+    width: 65%;
+  }
+  .jq-selectbox__select-text {
+    width: 120px!important;
   }
 
 }
 @media only screen and (min-width: 1440px) and (max-width: 1599px) {
   .left__sidebar {
-    width: 20%;
+    width: 19.5%;
   }
   .left__sidebar .nav--ubax .nav__item-title {
-    max-width: 240px;
+    max-width: 235px;
   }
   .left__sidebar .special__offers .icon-mini-arr-right {
     top: -2px;
   }
-  .header {
-    width: 74%;
-    margin-left: 0;
+  .main__content {
+    width: 80.5%;
+  }
+  .main__content .header {
     padding: 10px 0 10px 50px;
   }
-  .header__exit .icon-exit:before {
+  .main__content .header__exit .icon-exit:before {
     top: 8px;
   }
 
-  .header__exit {
+  .main__content .header__exit {
     padding-top: 9px;
   }
-  .information {
-    width: 6%;
-    margin-left: 0;
+  .main__content .information {
 
     .circlephone {
       bottom: -4px;
@@ -101,16 +114,31 @@
       left: 17px;
     }
   }
+  .main__content .container {
+    max-width: 1060px;
+  }
+  .main__content .choice .offer {
+    display: inline-block;
+    width: 38%;
+  }
+  .main__content .choice .options {
+    display: inline-block;
+    width: 55%;
+  }
+  .jq-selectbox__select-text {
+    width: 120px!important;
+  }
 
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1719px) {
   .left__sidebar {
-    width: 18.3%;
-    margin-left: 0;
+    width: 18%;
+    position: relative;
+    z-index: 5;
   }
   .left__sidebar .nav--ubax .nav__item-title {
-    max-width: 244px;
+    max-width: 239px;
     font-size: 15px;
     margin-right: 5px;
   }
@@ -125,26 +153,29 @@
     font-size: 12px;
     font-weight: 500;
   }
-  .header {
-    width: 76.2%;
-    margin-left: 0;
+  .main__content {
+    width: 82%;
+    margin-left: -5px;
+    position: relative;
+    z-index: 1;
+  }
+  .main__content .header {
     padding: 10px 0 10px 60px;
   }
-  .header__title {
+  .main__content .header__title {
     font-size: 31px;
   }
-  .header__exit .icon-exit:before {
+  .main__content .header__exit .icon-exit:before {
     top: 8px;
   }
-  .header__exit {
+  .main__content .header__exit {
     padding-top: 9px;
   }
   .icon {
     font-size: 31px;
   }
-  .information {
-    width: 5.5%;
-    margin-left: 0;
+
+  .main__content .information {
 
     .icon-info{
       font-size: 32px;
@@ -158,33 +189,84 @@
       left: 17px;
     }
   }
+  .main__content .container {
+    max-width: 1210px;
+  }
+  .main__content .choice .offer {
+    display: inline-block;
+    width: 46%;
+  }
+  .main__content .choice .options {
+    display: inline-block;
+    width: 48%;
+  }
 }
-@media only screen and (min-width: 1720px) and (max-width: 1950px) {
+@media only screen and (min-width: 1720px) and (max-width: 1819px) {
   .left__sidebar {
-    width: 17%;
+    width: 16.5%;
   }
   .left__sidebar .nav--ubax .nav__item-title {
-    max-width: 246px;
+    max-width: 239px;
   }
-  .header {
-    width: 77.5%;
-    margin-left: 0;
+  .main__content {
+    width: 83.5%;
   }
   .icon {
     font-size: 33px;
   }
-  .header__exit .icon-exit:before {
+  .main__content .header {
+    padding: 10px 0 10px 65px;
+  }
+  .main__content .header__exit .icon-exit:before {
     top: 8px;
   }
-  .header__exit {
+  .main__content .header__exit {
     padding-top: 9px;
   }
-  .information {
-    width: 5.5%;
-    margin-left: 0;
-
+  .main__content .information {
+    .circlephone {
+      width: 85px;
+      height: 85px;
+      bottom: -2px;
+      right: 2px;
+    }
     .img-circleblock {
-      top: 9px;
+      top: 10px;
+      left: 17px;
+    }
+  }
+}
+@media only screen and (min-width: 1820px) and (max-width: 1950px) {
+  .left__sidebar {
+    width: 15.5%;
+  }
+  .left__sidebar .nav--ubax .nav__item-title {
+    max-width: 246px;
+  }
+  .main__content {
+    width: 84.5%;
+  }
+  .main__content .header{
+    padding: 10px 0 10px 65px;
+  }
+  .icon {
+    font-size: 33px;
+  }
+  .main__content .header__exit .icon-exit:before {
+    top: 8px;
+  }
+  .main__content .header__exit {
+    padding-top: 9px;
+  }
+  .main__content .information {
+    .circlephone {
+      width: 85px;
+      height: 85px;
+      bottom: -2px;
+      right: 2px;
+    }
+    .img-circleblock {
+      top: 10px;
       left: 17px;
     }
   }

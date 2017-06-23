@@ -130,7 +130,7 @@ $(function() {
 
     $('.filter > ul > li > ul > li.has-sub > a').append('<span class="icon icon-mini-arr-down"></span>');
 
-
+    $('select').styler();
 
 
     //change
