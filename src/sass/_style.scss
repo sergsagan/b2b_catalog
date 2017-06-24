@@ -5,9 +5,10 @@
   vertical-align: top;
   float: left;
   width: 17%;
-  height: auto;
+  height: 1200px;
   background: url("../img/left_bg.png") 0 0 no-repeat;
   padding: 15px 10px;
+  position: relative;
 
   .logo{
     display: block;
@@ -38,7 +39,7 @@
       display: block;
       margin: 1.5em 0;
       width: 100%;
-      color: white;
+      color: rgb(255, 255, 255);
       @include transition(all .5s);
 
       &:hover .nav__item-title{
@@ -174,7 +175,7 @@
     max-width: 270px;
     width: 100%;
     padding: 0 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 
   .filter ul ul {
@@ -284,6 +285,7 @@
     font-weight: 400;
     line-height: 36px;
     text-align: center;
+    bottom: 25px;
   }
 }
 
@@ -309,7 +311,7 @@
       font-family: $Raleway;
       font-size: 32px;
       font-weight: 300;
-      width: 50%;
+      width: 70%;
     }
     &__tape{
       display: inline-block;
@@ -319,30 +321,55 @@
       font-size: 14px;
       font-weight: 300;
     }
-    &__exit{
-      color: rgb(255, 255, 255);
-      font-family: $Raleway;
-      font-size: 14px;
-      font-weight: 300;
-      text-decoration: none;
+    &__group{
       display: inline-block;
       vertical-align: middle;
-      position: relative;
+      width: 20%;
       float: right;
-      padding-right: 130px;
-      padding-top: 8px;
 
-      .icon-exit{
+      &-enter{
+        color: rgb(255, 255, 255);
+        font-family: $Raleway;
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
         display: inline-block;
         vertical-align: middle;
+        position: relative;
+        padding-top: 8px;
+
+        .icon-exit{
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .icon-exit:before{
+          position: absolute;
+          left: -30px;
+          top: 7px;
+        }
+        .reg{
+          display: inline-block;
+          color: rgb(106, 200, 199);
+          font-family: $Raleway;
+          font-size: 14px;
+          font-weight: 300;
+        }
       }
 
-      .icon-exit:before{
-        position: absolute;
-        left: -30px;
-        top: 7px;
+      &-registr{
+        color: rgb(106, 200, 199);
+        font-family: $Raleway;
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        padding-top: 8px;
       }
     }
+
   }
 
   //breadcrumbs
@@ -400,6 +427,7 @@
     width: 100%;
     height: auto;
     padding: 10px 15px;
+    margin-bottom: 20px;
 
     .offer{
       display: inline-block;
@@ -465,7 +493,7 @@
         }
         .jq-selectbox__trigger {
           position: absolute;
-          right: 0;
+          right: 10px;
           top: 0;
         }
         .jq-selectbox__trigger-arrow:before {
@@ -518,7 +546,7 @@
         input[type="submit"] {
           position: absolute;
           top: 0;
-          right: 0;
+          right: 5px;
           width: 15px;
           height: 15px;
           border: none;
@@ -530,11 +558,287 @@
 
   }
 
+  //filter__tags
+
+  .filter__tags{
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+
+    .tags__group{
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .filter__tag{
+
+      &-big{
+        display: block;
+        width: 198px;
+        height: 25px;
+        background-color: rgb(210, 210, 210);
+        color: rgb(52, 52, 54);
+        font-family: $Raleway;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 5px;
+        cursor: pointer;
+
+        &:hover{
+          background-color: rgb(170, 170, 170);
+        }
+      }
+      &-mini{
+        display: inline-block;
+        width: 46px;
+        height: 25px;
+        background-color: rgb(210, 210, 210);
+        color: rgb(52, 52, 54);
+        font-family: $Raleway;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 25px;
+        cursor: pointer;
+        margin-bottom: 5px;
+
+        &:hover{
+          background-color: rgb(170, 170, 170);
+        }
+      }
+    }
+  }
+
+  //catalog
+
+  .catalog{
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .catalog__item{
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      max-width: 330px;
+      background-color: rgb(255, 255, 255);
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    .pater {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0 0 1em;
+      height: 271px;
+      background: url("../img/item-bg.png") no-repeat;
+      max-width: 312px;
+      border: 1px solid #343434;
+    }
+    .catalog__item:hover .pater{
+      border: 0;
+    }
+    .pater__img {
+      width: 100%;
+      background: rgb(255, 255, 255);
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      height: 100%;
+
+      &-rating{
+        width: 70px;
+        height: auto;
+        display: inline-block;
+        float: left;
+        padding-left: 15px;
+
+        span{
+          display: block;
+          font-size: 32px;
+          margin-bottom: -10px;
+        }
+
+        .icon-light.icon.icon-star:before{
+          opacity: 0.5;
+        }
+        .quantity{
+          margin-top: 15px;
+          display: block;
+          color: rgb(109, 110, 112);
+          font-family: $Raleway;
+          font-weight: 400;
+          line-height: 18px;
+          font-size: 24px;
+        }
+      }
+
+      &-photo{
+        width: 200px;
+        float: right;
+        margin-top: -15px;
+      }
+
+      .item__heading{
+        position: relative;
+        width: 164px;
+        height: 64px;
+        z-index: 11;
+        top:-2px;
+        left: -2px;
+        background-color: rgba(255, 255, 255, 1);
+        color: rgb(76, 76, 76);
+        font-family: $Raleway;
+        padding: 3px 5px;
+
+        &-title{
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 18px;
+          margin-bottom: 10px;
+        }
+        &-descript{
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 18px;
+        }
+      }
+
+
+    }
+    .pater__img, .pater__content, .pater::after {
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .pater__content {
+      position: absolute;
+      top: 65px;
+      left: 15px;
+      width: 100%;
+      height: 100%;
+    }
+    .pater__content {
+      z-index: 9;
+      padding: 0.5em 1em;
+      text-align: center;
+      border-radius: 3px;
+      background-color: rgba(0, 0, 0, 0.59);
+      width: 277px;
+      height: 204px;
+      margin: 0 auto;
+    }
+    .pater__title {
+      display: block;
+      font-family: $Raleway;
+      line-height: 18px;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 10px;
+
+      .company__name{
+        color: rgb(106, 200, 199);
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .pater__btn {
+      width: 160px;
+      height: 23px;
+      background-color: rgb(106, 200, 199);
+      color: rgb(255, 255, 255);
+      font-family: $Raleway;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .pater:hover .pater__img {
+      transform: translate3d(0,100px,0) scale3d(0.7,0.7,1);
+      height: 185px;
+      width: 225px;
+      overflow: hidden;
+      padding: 5px;
+      left: 40px;
+
+      &-photo{
+        width: 130px;
+      }
+      &-rating{
+        .icon{
+          font-size: 20px;
+        }
+      }
+    }
+    .pater:hover .pater__content {
+      transform: translate3d(0,-50px,0);
+      height: 244px;
+      z-index: 10;
+    }
+  }
+
+  //pagination
+
+  .pagination{
+    text-align: center;
+
+    .pag {
+      display: inline-block;
+    }
+
+    .pag a {
+      color: black;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+      margin: 0 4px;
+      background-color: rgb(243, 243, 243);
+    }
+    .pag a.prev, .pag a.next{
+      border: 1px solid transparent;
+      background-color: transparent;
+
+      span{
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .pag a.active {
+      background-color: rgb(255, 255, 255);
+      color: rgb(54, 54, 54);
+      border: 1px solid rgb(106, 200, 199);
+    }
+    .pag a:hover:not(.active, .prev, .next) {
+      background-color: #ddd;
+    }
+  }
+
   //button-pulse
 
-  .information{
+  .pulse{
     display: inline-block;
     float: right;
+    position: relative;
+    top: -57px;
+    right: 0;
+    height: 87px;
+    margin-bottom: 10px;
+  }
+
+  .pulse:hover .info__block{
+    display: block;
+  }
+
+  .information{
     width: 90px;
     height: 87px;
     background-color: rgba(106, 200, 199, 1);
@@ -544,6 +848,57 @@
     right: 0;
     text-decoration: none;
   }
+  .info__block{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    right: 0;
+    width: 283px;
+    height: 132px;
+    background: url("../img/info-block-bg.png") no-repeat;
+    @include transition(all .5s);
+    padding: 15px;
+
+    ul{
+      li{
+        display: block;
+
+        .icon-phone{
+          display: inline-block;
+          vertical-align: top;
+          font-size: 32px;
+        }
+
+        .icon-fly{
+          font-size: 28px;
+        }
+
+        span{
+          display: inline-block;
+          vertical-align: top;
+          color: rgb(255, 255, 255);
+          font-family: $Raleway;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 25px;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .social{
+      padding-left: 15px;
+
+      .icon{
+        margin-right: 5px;
+        font-size: 33px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+
 
   .img-circle {
     background-color: rgba(106, 200, 199, 0.9);

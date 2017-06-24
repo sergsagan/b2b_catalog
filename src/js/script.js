@@ -56,43 +56,6 @@ $(function() {
 		);
 	});
 
-   /*function init() {
-        [].slice.call(document.querySelectorAll('.nav')).forEach(function(nav) {
-            var navItems = [].slice.call(nav.querySelectorAll('.nav__item')),
-                itemsTotal = navItems.length,
-                setCurrent = function(item) {
-                    // return if already current
-                    if( item.classList.contains('nav__item--current') ) {
-                        return false;
-                    }
-
-                    // remove current
-                    var currentItem = nav.querySelector('.nav__item--current');
-                    currentItem.classList.remove('nav__item--current');
-
-                    // set current
-                    item.classList.add('nav__item--current');
-
-                };
-
-            navItems.forEach(function(item) {
-                item.addEventListener('click', function() { setCurrent(item); });
-            });
-        });
-
-        [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
-            link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
-            new Clipboard(link);
-            link.addEventListener('click', function() {
-                link.classList.add('link-copy--animate');
-                setTimeout(function() {
-                    link.classList.remove('link-copy--animate');
-                }, 300);
-            });
-        });
-    }
-
-    init();*/
 
     $('.nav__link .nav__item').click(function () {
     	$('.nav__item').removeClass('nav__item--current');
@@ -132,38 +95,6 @@ $(function() {
 
     $('select').styler();
 
-
-    //change
-	$('.form-of-training .order-form').click(function() {
-		$('.form-of-training').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.form-of-training').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.form-of-training').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	$('.practices .order-form').click(function() {
-		$('.practices').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.practices').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.practices').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	$('.course .order-form').click(function() {
-		$('.course').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.course').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.course').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	new WOW().init();
-    
-    
-    $('.fade').slick({
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-    });
-
-    
-
-
     
     //Аякс отправка форм
     //Документация: http://api.jquery.com/jquery.ajax/
@@ -185,3 +116,4 @@ $(function() {
 		return false;
 	});
 });
+
