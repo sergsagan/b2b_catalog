@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html class="ie8"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>B2B_catalog</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    //= template/left_sidebar.html
+    <div class="main__content">
+        //= template/header-login.html
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a class="item__link" href="#">Главная</a></li>
+                    <span>/</span>
+                    <li><a class="item__link-current" href="#">Магазин</a></li>
+                </ul>
+            </div>
+        </section><!--end-breadcrumbs-->
+
+        <section class="choice">
+            <div class="container">
+                <label class="offer">
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Специальное предложение</span>
+                </label>
+                <div class="options">
+                    <div class="sort">
+                        <span>Сортировать</span>
+                        <select name="sort" id="sort-2">
+                            <option value="1">по Рейтингу</option>
+                            <option value="2">по Цене</option>
+                            <option value="3">по Популярности</option>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="Поиск...">
+                        <input type="submit" value="">
+                    </div>
+                </div>
+            </div>
+        </section><!--end-choice-->
+
+        <section class="filter__tags">
+            <div class="container">
+                <div class="tags__group">
+                    <span class="filter__tag-big">Инъекционные препараты</span>
+                    <span class="filter__tag-mini">1 ml</span>
+                    <span class="filter__tag-mini">1,5 ml</span>
+                    <span class="filter__tag-mini">2 ml</span>
+                    <span class="filter__tag-mini">5 ml</span>
+                </div>
+                <div class="tags__group">
+                    <span class="filter__tag-big">Постпроцедурный уход</span>
+                    <span class="filter__tag-big">Домашний уход</span>
+                </div>
+            </div>
+        </section><!--end-filter__tags-->
+
+        <section class="catalog__login">
+            <div class="container">
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-1">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-1" class="btn btn-buy" style="filter: url('#filter-ripple-1')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-2">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-2" class="btn btn-buy" style="filter: url('#filter-ripple-2')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-1">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-1" class="btn btn-buy" style="filter: url('#filter-ripple-1')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-2">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-2" class="btn btn-buy" style="filter: url('#filter-ripple-2')">Купить</button>
+                </div>
+
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-1">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-1" class="btn btn-buy" style="filter: url('#filter-ripple-1')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-2">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-2" class="btn btn-buy" style="filter: url('#filter-ripple-2')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-1">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-1" class="btn btn-buy" style="filter: url('#filter-ripple-1')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-2">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-2" class="btn btn-buy" style="filter: url('#filter-ripple-2')">Купить</button>
+                </div>
+
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-1">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-1" class="btn btn-buy" style="filter: url('#filter-ripple-1')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-2">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-2" class="btn btn-buy" style="filter: url('#filter-ripple-2')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-1">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-1" class="btn btn-buy" style="filter: url('#filter-ripple-1')">Купить</button>
+                </div>
+                <div class="catalog__item">
+                    <a href="#" class="catalog__link">
+                        <div class="item__heading">
+                            <span class="item__heading-title">WOW Eyes</span>
+                            <span class="item__heading-descript">Гелевые патчи под глаза Institute Hyalual</span>
+                        </div>
+                        <div class="item__rating">
+                            <span class="icon icon-star-not"></span>
+                            <span class="icon icon-star icon-light"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="icon icon-star"></span>
+                            <span class="quantity">5 шт</span>
+                        </div>
+                        <div class="item__price">
+                            <span class="item__price-old">499 грн</span>
+                            <span class="item__price-new">399 грн</span>
+                        </div>
+                        <img class="item__photo" src="img/photo.png" alt="picture">
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                        <defs>
+                            <filter id="filter-ripple-2">
+                                <feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+                                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+                                <feComposite operator="in" in2="ripple"></feComposite>
+                                <feComposite in2="SourceGraphic"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <button id="component-2" class="btn btn-buy" style="filter: url('#filter-ripple-2')">Купить</button>
+                </div>
+            </div>
+        </section><!--end-catalog-login-->
+
+
+        <section class="pagination">
+            <div class="container">
+                <div class="pag">
+                    <a class="prev" href="#"><span class="icon icon-arrow-left"></span></a>
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a class="next" href="#"><span class="icon icon-arrow-right"></span></a>
+                </div>
+            </div>
+        </section><!--end-pagination-->
+
+    </div>
+
+</div>
+//= template/footer.html
+
+<script defer src="js/vendor.js"></script>
+<script defer src="js/script.js"></script>
+</body>
+</html>

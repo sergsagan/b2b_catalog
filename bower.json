@@ -19,7 +19,8 @@
     "jquery.maskedinput": "~1.4.1",
     "wow": "~1.1.2",
     "readmore-js": "^2.2.0",
-    "ionrangeslider":"~2.1.6",
-    "jquery.form-styler":"~2.0.0"
+    "ionrangeslider": "~2.1.6",
+    "jquery.form-styler": "~2.0.0",
+    "gsap": "^1.19.1"
   }
 }

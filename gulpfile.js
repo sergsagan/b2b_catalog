@@ -40,7 +40,7 @@ var src = {
 
     server = {
         host: 'localhost',
-        port: '9001'
+        port: '9000'
     },
 
     env,
@@ -111,36 +111,13 @@ var cssFilter = gulpFilter('**/*.css');
 gulp.task('styles:vendor', function() {
   gulp.src(mainBowerFiles({
           "overrides": {
-              "normalize.css": {
+             "normalize.css": {
                   "main": "./normalize.css"
-              },
-
-              "magnific-popup": {
-                  "main": "./dist/magnific-popup.css"
-              },
-
-              "slick-carousel": {
-                  "main": [
-                      "./slick/slick.css",
-                      "./slick/slick-theme.css",
-                      "./slick/fonts/!*.*"
-                  ]
-              },
-
-              "ionrangeslider": {
-                  "main": [
-                      './css/ion.rangeSlider.css',
-                      './css/ion.rangeSlider.skinHTML5.css'
-                  ]
               },
 
               "jquery.form-styler": {
                   "main": "./dist/jquery.formstyler.css"
-              },
-              
-	          "wow": {
-		          "main": "./css/libs/animate.css"
-	          }
+              }
           }
   }))
   .pipe(cssFilter)
@@ -173,33 +150,13 @@ var jsFilter = gulpFilter('**/*.js');
 gulp.task('js:vendor', function() {
     gulp.src(mainBowerFiles({
           "overrides": {
-              "jquery": {
+             "jquery": {
                   "main": "./dist/jquery.min.js"
               },
 
-	          "magnific-popup": {
-                  "main": "./dist/jquery.magnific-popup.min.js"
-              },
-
-             "slick-carousel": {
-                  "main": "./slick/slick.min.js"
-              },
-
-              "jquery.maskedinput": {
-                  "main": "./dist/jquery.maskedinput.min.js"
-              },
-
-              "jquery.form-styler": {
+             "jquery.form-styler": {
                   "main": "./dist/jquery.formstyler.min.js"
-              },
-
-              "readmore-js": {
-                  "main": "./readmore.js"
-              },
-	
-	          "wow": {
-		          "main": "./dist/wow.min.js"
-	          }
+              }
           }
   }))
       .pipe(jsFilter)
