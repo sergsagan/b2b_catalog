@@ -313,6 +313,60 @@
     text-align: center;
     bottom: 25px;
   }
+
+  .btn-mobile-menu{
+    display: none;
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+    overflow: hidden;
+
+    .icon:before{
+      content: '';
+      display: block;
+      width: 22px;
+      height: 15px;
+      background: url("../img/mobile-menu.png") 0 0 no-repeat;
+    }
+
+    &:before{
+      content:"";
+      position:absolute;
+      top:0;
+      bottom:0;
+      width:100px;
+      border-radius:100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .btn-mobile-menu.active{
+    .icon:before{
+      content: '';
+      display: block;
+      width: 22px;
+      height: 20px;
+      background: url("../img/mobile-arr.svg") 0 0 no-repeat;
+    }
+    &:before{
+      content:"";
+      position:absolute;
+      top:0;
+      bottom:0;
+      width:100px;
+      border-radius:100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .right:before{
+    right:0;
+  }
+  .c1{
+    width:50px;
+  }
 }
 
 
@@ -379,6 +433,10 @@
         .icon-exit{
           display: inline-block;
           vertical-align: middle;
+        }
+
+        .icon-ex:before{
+          display: none;
         }
 
         .icon-exit:before{
@@ -456,6 +514,10 @@
           font-weight: 300;
         }
       }
+    }
+
+    .logo-mobile{
+      display: none;
     }
 
   }
@@ -610,6 +672,9 @@
             color: rgb(52, 52, 54);
           }
         }
+        .jq-selectbox__dropdown ul {
+          background-color: white;
+        }
       }
       .search{
         display: inline-block;
@@ -643,6 +708,37 @@
         }
       }
     }
+
+    .cart-mobile{
+      display: none;
+      position: relative;
+      text-decoration: none;
+
+      .quantity{
+        position: absolute;
+        top: 0p;
+        left: 20px;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: rgb(106, 200, 199);
+        text-align: center;
+        color: rgb(109, 110, 112);
+        font-family: $Raleway;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .sum{
+        display: inline-block;
+        color: rgb(76, 76, 76);
+        font-family: $Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
+
 
 
   }
@@ -1054,6 +1150,7 @@
 
   .pagination{
     text-align: center;
+    position: relative;
 
 
 
@@ -1070,6 +1167,7 @@
       transition: background-color .3s;
       margin: 0 4px;
       background-color: rgb(243, 243, 243);
+      border: 1px solid transparent;
     }
     .pag a.prev, .pag a.next{
       border: 1px solid transparent;
@@ -1079,6 +1177,19 @@
         display: inline-block;
         vertical-align: middle;
       }
+    }
+    .pag a.prev{
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+    .pag a.next{
+      position: absolute;
+      right: 0;
+      top: -10px;
+    }
+    .pag a.prev:hover,.pag a.next:hover {
+      border: 1px solid transparent;
     }
 
     .pag a.active {

@@ -57,6 +57,14 @@ $(function() {
         );
     });
 
+    $('.btn-mobile-menu').click( function(event){
+        event.preventDefault();
+        $(this).toggleClass('active');
+        $('.left__sidebar').toggleClass('open');
+    });
+
+
+
 
     $('.nav__link .nav__item').click(function () {
         $('.nav__item').removeClass('nav__item--current');
